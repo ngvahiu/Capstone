@@ -387,6 +387,11 @@ header.nav-fixed{
 }
 
 /* QUESTIONS */
+.questions__page {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+}
 .questions__page  .img-curve{
     border-radius: 6px;
     transition: all .5s;
