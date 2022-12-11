@@ -395,6 +395,7 @@ header.nav-fixed{
 .questions__page  .img-curve{
     border-radius: 6px;
     transition: all .5s;
+    height: 500px;
 }
 .questions__page .img-curve:hover{
     transform: translateY(-10px);
