@@ -462,6 +462,19 @@ header.nav-fixed{
     transform: rotate(-180deg);
 }
 
+/* READY */
+.btn-primary {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #d62f58;
+    border-color: #cf2952;
+}
+
 /* FOOTER */
 footer .footer__main {
     background-color: #f7f9fc;
