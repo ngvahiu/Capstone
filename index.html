@@ -245,35 +245,43 @@
                 <input type="checkbox" checked>
                 <i class="fa-solid fa-angle-down"></i>
                 <h2>Sed ut perspiciatis unde omnis?</h2>
-                <p>Sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil debitis animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui voluptates eveniet, incidunt officiis eaque iste minima autem.</p>
+                <p>Sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil
+                  debitis animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui voluptates eveniet,
+                  incidunt officiis eaque iste minima autem.</p>
               </li>
               <li>
                 <input type="checkbox" checked>
                 <i class="fa-solid fa-angle-down"></i>
                 <h2>At vero eos iusto odio ducimus qui?</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil quasi fuga, ad corrupti libero omnis sapiente
-                non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
-                voluptates eveniet, incidunt officiis eaque iste minima autem.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
+                  laboriosam nihil quasi fuga, ad corrupti libero omnis sapiente
+                  non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
+                  voluptates eveniet, incidunt officiis eaque iste minima autem.</p>
               </li>
               <li>
                 <input type="checkbox" checked>
                 <i class="fa-solid fa-angle-down"></i>
                 <h2>We denounce with righteous?</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda excepturi aperiam iste minima autem.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
+                  laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis
+                  sapiente non assumenda excepturi aperiam iste minima autem.</p>
               </li>
               <li>
                 <input type="checkbox" checked>
                 <i class="fa-solid fa-angle-down"></i>
                 <h2>perspiciatis unde omnis?</h2>
-                <p>Sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil debitis animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui voluptates eveniet, incidunt officiis eaque iste minima autem.</p>
+                <p>Sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil
+                  debitis animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui voluptates eveniet,
+                  incidunt officiis eaque iste minima autem.</p>
               </li>
               <li>
                 <input type="checkbox" checked>
                 <i class="fa-solid fa-angle-down"></i>
                 <h2>At vero eos iusto odio ducimus qui?</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil quasi fuga, ad corrupti libero omnis sapiente
-                non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
-                voluptates eveniet, incidunt officiis eaque iste minima autem.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
+                  laboriosam nihil quasi fuga, ad corrupti libero omnis sapiente
+                  non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
+                  voluptates eveniet, incidunt officiis eaque iste minima autem.</p>
               </li>
             </ul>
           </div>
@@ -430,9 +438,9 @@
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-  crossorigin="anonymous"></script>
-  
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
   <!-- NUMBERS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
     integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
@@ -445,6 +453,22 @@
   <!-- BACK TO TOP -->
   <script src="./js/util.js"></script>
   <script src="./js/main.js"></script>
+  <script>
+    let navbar = document.querySelector('.fixed-top');
+
+    window.onscroll = function () {
+      let B = document.body; //IE 'quirks'
+      let D = document.documentElement; //IE with doctype
+      D = (D.clientHeight)? D: B;
+
+      if (D.scrollTop > 200) {
+        navbar.classList.add('nav-fixed');
+      } 
+      else if(D.scrollTop == 0) {
+        navbar.classList.remove('nav-fixed');
+      }
+    };
+  </script>
 </body>
 
 </html>

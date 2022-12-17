@@ -53,18 +53,24 @@ body{
     margin-right: auto;
 }
 /* HEADER */
+header {
+    background-color: #fff;
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
 .fixed-top{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 0px 3px 0 rgb(0 0 0 / 5%);
-    padding: 10px 0;
     z-index: 100;
 }
 header.nav-fixed{
     padding: 0px;
-    background-color: #fff;
     height: 70px;
     border-bottom: none;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
@@ -140,17 +146,17 @@ header.nav-fixed{
     left: 49%;
     z-index: 1;
 }
-
-
 /* CAOURSEL */
 .carousel{
-    margin-top: 90px;
     background: #ffffff;
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+}
+.carousel .container{
+    padding-top: 90px;
 }
 .carousel__left h3{
     font-size: 50px;
